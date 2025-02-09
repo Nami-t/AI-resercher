@@ -10,50 +10,7 @@ from typing_extensions import TypedDict
 st.set_page_config(page_title="AI Researcher", page_icon="🧠", layout="wide")
 
 # Inject Custom CSS and JavaScript for Dynamic Input
-st.markdown("""
-    <style>
-        /* Centered Layout */
-        .search-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
-        
-        /* Search Input Field */
-        .search-input {
-            transition: width 0.3s ease-in-out;
-            min-width: 250px;
-            max-width: 600px;
-            width: 250px;  /* Default width */
-            padding: 12px;
-            font-size: 18px;
-            border-radius: 10px;
-            border: 1px solid #ccc;
-        }
-
-        /* Custom Search Button */
-        .stButton>button {
-            background-color: #007BFF;
-            color: white;
-            font-size: 16px;
-            padding: 10px 20px;
-            border-radius: 8px;
-            transition: 0.3s;
-        }
-        .stButton>button:hover {
-            background-color: #0056b3;
-        }
-
-        /* Response Box */
-        .response-box {
-            background: #e8f0fe;
-            padding: 15px;
-            border-radius: 10px;
-            font-size: 16px;
-        }
-        
-    </style>
-
+st.markdown(""" 
     <script>
         function adjustWidth() {
             var input = document.getElementById("dynamic-input");
