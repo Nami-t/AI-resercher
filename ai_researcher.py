@@ -42,7 +42,7 @@ class ResearchStateOutput(TypedDict):
     response: str
 
 def search_web(state: ResearchState):
-    search = TavilySearchResults(max_results=3)
+    search = TavilySearchResults(max_results=3, tavily_api_key="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")
     search_results = search.invoke(state["query"])
 
     return  {
